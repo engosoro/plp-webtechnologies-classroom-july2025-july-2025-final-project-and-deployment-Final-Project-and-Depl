@@ -232,3 +232,143 @@ body.dark header,
 body.dark footer {
   background: #1e1e1e;
 }
+/* Main blog container */
+.page.blog {
+  background-color: #f4f6f9; /* Light gray background */
+  color: #222; /* Dark text */
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Blog title */
+.page.blog h1 {
+  color: #2c3e50; /* Dark blue */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Individual blog cards */
+.card {
+  background-color: #ffffff; /* White background for cards */
+  color: #222; /* Ensure dark text is visible */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Card headings */
+.card h2 {
+  color: #d35400; /* Orange-brown */
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph text */
+.card p {
+  color: #333; /* Dark gray for readability */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+.card a {
+  color: #2980b9; /* Blue link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  color: #16a085; /* Teal on hover */
+}
+/* Fix for invisible text in blog page */
+.page.blog {
+  background-color: #f4f6f9; /* light background */
+  color: #222; /* dark text */
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Blog header */
+.page.blog h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Blog cards */
+.page.blog .card {
+  background-color: #ffffff; /* white background */
+  color: #222; /* ensure dark text */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Card heading */
+.page.blog .card h2 {
+  color: #d35400; /* orange-brown */
+}
+
+/* Paragraphs inside cards */
+.page.blog .card p {
+  color: #333; /* visible dark gray */
+  line-height: 1.6;
+}
+
+/* Links */
+.page.blog .card a {
+  color: #2980b9; /* blue */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page.blog .card a:hover {
+  color: #16a085; /* teal on hover */
+}
+/* ---------------------------
+   Emergency visibility fix
+   Paste at the end of style.css
+   --------------------------- */
+.page.blog {
+  background-color: #f4f6f9 !important;
+  color: #222 !important;
+}
+
+/* Ensure cards have visible background & dark text */
+.page.blog .card {
+  background: #ffffff !important;
+  color: #222 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  -webkit-text-fill-color: #222 !important; /* for some browsers */
+  mix-blend-mode: normal !important;
+}
+
+/* Force all descendants visible & readable */
+.page.blog .card, 
+.page.blog .card * {
+  color: #222 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-indent: 0 !important;
+}
+
+/* Disable any pseudo-element overlays that might be covering text */
+.page.blog .card::before,
+.page.blog .card::after {
+  display: none !important;
+}
+
+/* Reveal class override (common animation that hides content) */
+.page.blog .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Links & headings */
+.page.blog .card h2 { color: #d35400 !important; }
+.page.blog .card a  { color: #2980b9 !important; text-decoration: none !important; }

